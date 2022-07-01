@@ -1,0 +1,25 @@
+.login-section {
+    height: 100vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1LsGHBJpMvrLMXFHLJHtrptnqC52r0HCjw&usqp=CAU);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .login-box {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        // padding: 50px 120px;
+        background-color: white;
+        // position: absolute;
+        max-width: 444px;
+        padding: 20px;
+        top: 50%;
+        transform: translateY(50%);
+       
+
+        .sign-in-avatar {
+            background-color: #9c27b0 !important;
+        }
+    }
+}
+
