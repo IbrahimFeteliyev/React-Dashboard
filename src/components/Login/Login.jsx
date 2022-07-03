@@ -18,12 +18,19 @@ const Login = () => {
         dispach(loginUserAction(email, password))
     }
     useEffect(() => {
-    }, [navigate])
+        
+        if (userInfo.status) {
+            if (userInfo.status === 200) {
+                navigate("/")
+                
+            }else{
+                console.log("Login olunmadi");
+            }
+        }
+    }, [userInfo])
 
-    if (userInfo.length !== 0) {
-        navigate("/")
-    }
-   
+
+
     console.log(userInfo);
 
 
